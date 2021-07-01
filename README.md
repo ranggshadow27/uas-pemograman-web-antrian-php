@@ -3,9 +3,7 @@
 Rangga Tito Prayogo - 311910036 - TI 19 B1
 <br />
 <br />
-<br />
 UAS - PEMOGRAMAN WEB - SISTEM ANTRIAN
-<br />
 <br />
 <br />
 UNIVERSITAS PELITA BANGSA
