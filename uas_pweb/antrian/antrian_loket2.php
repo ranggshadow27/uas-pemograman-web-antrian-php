@@ -37,12 +37,12 @@
     </center>
     <br />
     <br />
-    <div class="login">
-    <a class="back" href="home.php">Back</a>
+    <div class="container clogin">
+        <a class="back" href="home.php">Back</a>
         <form action="saveantrian.php" method="post">
             <div class="area">
                 <label>Nomor Antrian Tersedia:</label>
-                <input type="text" name="nomor_antrian" id="noantrian" value="<?php echo $antrian ?>" readonly/>
+                <input type="text" name="nomor_antrian" id="noantrian" value="<?php echo $antrian ?>" readonly />
             </div>
             <div>
                 <input type="submit" value="Ambil Antrian" name="add_loket2" id="btn">
@@ -52,8 +52,8 @@
                 $barang = mysqli_query($databaseconn,"SELECT max(nomor_antrian) as antrianTerakhir FROM loket2");
 			    $b = mysqli_fetch_array($barang);
 			?>
-            
-            <p class="text">Nomor Antrian Terakhir : 
+
+            <p class="text">Nomor Antrian Terakhir :
             <p class="highlight"><?php echo $b['antrianTerakhir']; ?></p>
             </p>
         </form>

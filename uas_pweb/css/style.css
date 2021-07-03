@@ -96,6 +96,29 @@ th {
     transition: 0.5s;
 }
 
+.reset {
+    width: 100%;
+    font-family: 'poppins' , 'sans-serif';
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #970000;
+    padding: 10px 5px;
+    margin: 20px 0px;
+    color: #970000;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+}
+
+.reset:hover {
+    color: #e41d1d;
+    border: 2px solid #e41d1d;
+}
+
 .master {
     color: #fff;
     background-color: #1d3557;
@@ -195,21 +218,19 @@ select {
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    border: 0;
-    padding: 15px 8px;
+    border: 2px solid #970000;
+    padding: 10px 5px;
     margin: 20px 0px;
-    color: #e41d1d;
+    color: #970000;
     background-color: transparent;
     border-radius: 8px;
     cursor: pointer;
     letter-spacing: 0.2em;
-    display: flex;
-    justify-content: center;
 }
 
 #btn-reset:hover {
-    color: #d33007;
-    text-decoration: underline;
+    color: #e41d1d;
+    border: 2px solid #e41d1d;
 }
 
 #btn:hover {
@@ -217,20 +238,39 @@ select {
 }
 
 
-.containers {
-    width: 30em;
-    margin: 3em auto;
+.container {
     background-color: #fff;
-    padding: 20px;
     border-radius: 10px;
 }
 
-.containera {
+.s {
+    width: 30em;
+    margin: 3em auto;
+    padding: 20px;
+}
+
+.a {
     width: 30em;
     margin: 5em auto;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
+}
+
+.b {
+    width: 42em;
+    margin: 5em auto;
+    padding: 20px;
+}
+
+.d {
+    width: 25em;
+    margin: 5em auto;
+    padding: 2em;
+}
+
+.clogin {
+    padding: 3em;
+    margin: 2em auto;
+    width: 15em;
 }
 
 .containers h3 {
@@ -283,9 +323,22 @@ h2 {
     text-decoration: none;
     transition: 0.3s;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-left: 5px;
+}
+
+.loglink {
+    color: #1d3557;
+    text-decoration: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-weight: .8em;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .back {
@@ -293,102 +346,14 @@ h2 {
     text-decoration: none;
     transition: 0.3s;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .1em;
 }
 
-.link:hover , .back:hover {
+.link:hover , .back:hover, .loglink:hover {
     color: #ca1717;
 }
-
-/* datamaster */
-
-.navdatamaster {
-    display: inline-block;
-    background-color: #fff;
-}
-
-.navdatamaster a {
-    display: inline-block;
-}
-
-
-.datamastercontainer {
-    background-color: #fff;
-    padding: 50px 50px;
-    width: 80%;
-    margin: 2em auto;
-    border-radius: 5px;
-    align-self: center;
-}
-
-.buttondatamaster {
-    text-decoration: none;
-    font-size: .8em;
-    color:#1d3557;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: 1px solid #1d3557;
-    padding: 15px 20px;
-    margin: 10px 2px;
-    background-color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-}
-
-.buttondatamaster:hover {
-    background-color: #101f33;
-    color: #fff;
-}
-
-.buttonlogout {
-    text-decoration: none;
-    font-size: .8em;
-    color:#e41d1d;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: 1px solid #ca1717;
-    padding: 15px 20px;
-    margin: 10px 2px;
-    background-color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-}
-
-.buttonlogout:hover {
-    background-color: #e41d1d;
-    color: #fff;
-}
-
-
-.h4datamaster {
-    color: #fff;
-    font-weight: 500;
-    padding: 5px;
-}
-
-.h2datamaster {
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-    padding-top: 50px;
-    letter-spacing: 0.1em;
-}
-
-/* loginpage */
-
-.login {
-    padding: 3em;
-    margin: 2em auto;
-    width: 15em;
-    background: #fff;
-    border-radius: 3px;
-}
-   
+  
 label {
     font-size: 10pt;
     color: #555;

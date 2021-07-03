@@ -22,23 +22,19 @@
 	$antrian = $data['antrianTerkecil'];
 
 	?>
-
-    <br />
     <br />
     <center>
-        <h2>ANTRIAN LOKET PERAKITAN PC</h2>
+        <h2>ANTRIAN LOKET PEMBELIAN BARANG</h2>
     </center>
-    <br />
-    <br />
-    <div class="login">
-    <a class="back" href="admin-home.php">Back</a>
+    <div class="container clogin">
+        <a class="back" href="admin-home.php">Back</a>
         <form action="delete.php" method="post">
             <div class="area">
                 <label>Nomor Antrian:</label>
                 <input type="text" name="nomor_antrian" id="noantrian" value="<?php echo $antrian ?>" readonly />
             </div>
             <div>
-                <a class="button" href="admin-loket2.php?pesan=called">Panggil</a>
+                <a class="button master" href="admin-loket2.php?pesan=called">Panggil</a>
 
                 <?php
                     if(isset($_GET['pesan'])){
@@ -68,6 +64,18 @@
                 <input type="submit" value="Reset Antrian" name="reset_loket2" id="btn-reset">
             </div>
         </form>
+    </div>
+
+    <div class="container d">
+    <?php
+        if(isset($_GET['antrian'])){
+		    if($_GET['antrian'] == "show"){
+			    include 'table-loket2.php';
+		    }
+	    } else {
+            echo '<a class="button master" href="admin-loket2.php?antrian=show">Lihat Antrian</a>';
+        }
+    ?>
     </div>
 </body>
 

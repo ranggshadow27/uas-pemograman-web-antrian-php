@@ -17,7 +17,7 @@ include ('database.php');
 	<br/>
 	<center><h2>SIGN UP</h2></center>	
 	<br/>
-	<div class="login">
+	<div class="container clogin">
 	<a class="back" href="index.php">Kembali</a>
 	<br/>
 	<br/>

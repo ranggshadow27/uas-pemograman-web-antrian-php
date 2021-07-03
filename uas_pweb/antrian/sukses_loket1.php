@@ -15,7 +15,7 @@
         include "../database.php";
     ?>
 
-    <div class="login">
+    <div class="container clogin">
             <?php 
                 $barang = mysqli_query($databaseconn,"SELECT max(nomor_antrian) as antrianTerambil FROM loket1");
 			    $b = mysqli_fetch_array($barang);

@@ -29,15 +29,15 @@
     </center>
     <br />
     <br />
-    <div class="login">
-    <a class="back" href="admin-home.php">Back</a>
+    <div class="container clogin">
+        <a class="back" href="admin-home.php">Back</a>
         <form action="delete.php" method="post">
             <div class="area">
                 <label>Nomor Antrian:</label>
                 <input type="text" name="nomor_antrian" id="noantrian" value="<?php echo $antrian ?>" readonly />
             </div>
             <div>
-                <a class="button" href="../homepage/homepage.php?pesan=called">Panggil</a>
+                <a class="button master" href="admin-loket1.php?pesan=called">Panggil</a>
 
                 <?php
                     if(isset($_GET['pesan'])){
@@ -66,12 +66,18 @@
                 <input type="submit" value="Reset Antrian" name="reset_loket1" id="btn-reset">
             </div>
         </form>
+    </div>
 
-        <form action="../homepage/panggil.php" method="post">
-            <div>
-                <input type="submit" value="Panggil" name="panggil_loket1" id="btn">
-            </div>
-        </form>
+    <div class="container d">
+        <?php
+        if(isset($_GET['antrian'])){
+		    if($_GET['antrian'] == "show"){
+			    include 'table-loket1.php';
+		    }
+	    } else {
+            echo '<a class="button master" href="admin-loket1.php?antrian=show">Lihat Antrian</a>';
+        }
+    ?>
     </div>
 </body>
 

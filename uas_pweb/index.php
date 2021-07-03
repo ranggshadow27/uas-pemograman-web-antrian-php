@@ -29,7 +29,7 @@
 		}
 	}
 	?>
-    <div class="login">
+    <div class="container clogin">
         <br />
         <form action="session.php" method="post">
             <div class="area">

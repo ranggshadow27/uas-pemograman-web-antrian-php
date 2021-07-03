@@ -31,7 +31,7 @@
         <h2>SELAMAT DATANG!</h2>
         <h4 class="title">Silahkan Pilih Loket</h4>
     </center>
-    <div class="containera">
+    <div class="container a">
         <div class="banner loket1">
             <p class="font normal">Loket 1 Perakitan Komputer :
                 <br />
@@ -42,7 +42,7 @@
             </p>
             <a class="button lok1" href="antrian_loket1.php">Ambil Antrian</a>
         </div>
-        <br/>
+        <br />
         <div class="banner loket2">
             <p class="font normal">Loket 2 Pembelian :
                 <br />
@@ -53,7 +53,7 @@
             </p>
             <a class="button lok2" href="antrian_loket2.php">Ambil Antrian</a>
         </div>
-        <br/>
+        <br />
         <div class="banner loket3">
             <p class="font normal">Loket 3 Customer Service :
                 <br />

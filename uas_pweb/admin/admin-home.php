@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,20 +25,21 @@
         $antrian3 = $data3['jumlahAntrianloket3'];
     ?>
 </head>
+
 <body>
     <br />
     <center>
         <h2>ADMIN PANEL</h2>
-        <div class="containers">
-        <h4>User Active :
-            <span class="user_login">
-                <?php echo $_SESSION['username']; ?>
-            </span>|
-            <a class="link" href="../logout.php">Logout</a>
-        </h4>
+        <div class="container s">
+            <h4>User Active :
+                <span class="user_login">
+                    <?php echo $_SESSION['username']; ?>
+                </span>|
+                <a class="link" href="../logout.php">Logout</a>
+            </h4>
         </div>
     </center>
-    <div class="containera">
+    <div class="container a">
         <div class="banner loket1">
             <p class="font normal">Loket 1 Perakitan Komputer :
                 <br />
@@ -48,7 +50,7 @@
             </p>
             <a class="button lok1" href="admin-loket1.php">Kelola Antrian</a>
         </div>
-        <br/>
+        <br />
         <div class="banner loket2">
             <p class="font normal">Loket 2 Pembelian :
                 <br />
@@ -59,7 +61,7 @@
             </p>
             <a class="button lok2" href="admin-loket2.php">Kelola Antrian</a>
         </div>
-        <br/>
+        <br />
         <div class="banner loket3">
             <p class="font normal">Loket 3 Customer Service :
                 <br />
@@ -75,4 +77,5 @@
         </div>
     </div>
 </body>
+
 </html>

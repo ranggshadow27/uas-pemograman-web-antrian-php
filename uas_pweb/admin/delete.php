@@ -9,7 +9,7 @@
 
         mysqli_query($databaseconn, "DELETE FROM loket1 WHERE nomor_antrian = '$nomor_antrian'") or die(mysqli_error($databaseconn));
 
-        header("location:admin-loket1.php");
+        header("location:admin-loket1.php?antrian=show");
         }
         else {
         echo 'Eror Bray';
@@ -20,7 +20,7 @@
 
         mysqli_query($databaseconn, "DELETE FROM loket2 WHERE nomor_antrian = '$nomor_antrian'") or die(mysqli_error($databaseconn));
 
-        header("location:admin-loket2.php");
+        header("location:admin-loket2.php?antrian=show");
         }
         else {
         echo 'Eror Bray';
@@ -31,7 +31,7 @@
 
         mysqli_query($databaseconn, "DELETE FROM loket3 WHERE nomor_antrian = '$nomor_antrian'") or die(mysqli_error($databaseconn));
 
-        header("location:admin-loket3.php");
+        header("location:admin-loket3.php?antrian=show");
         }
         else {
         echo 'Eror Bray';

@@ -43,8 +43,8 @@
         <h2>SELAMAT DATANG DI TOKO KOMPUTER OVERPRICE!</h2>
         <h4 class="title">Mohon untuk menunggu sesuai antrian</h4>
     </center>
-    <div class="containers">
-    <h4>Loket 1 Perakitan Komputer</h4>
+    <div class="container s">
+        <h4>Loket 1 Perakitan Komputer</h4>
         <div class="banner loket1">
             <p class="font normal">
                 <?php
@@ -57,10 +57,10 @@
                         echo "<a class='link' href='../homepage/homepage.php?pesan=called'>Refresh Page</a><br/>";
                     }
                 ?>
-                <br/>
+                <br />
             </p>
             <p class="font small">
-                Antrian Tersisa : 
+                Antrian Tersisa :
                 <?php
                     echo $antrian1
                 ?> Antrian
@@ -79,10 +79,10 @@
                         echo "<a class='link' href='../homepage/homepage.php?pesan=called'>Refresh Page</a><br/>";
                     }
                 ?>
-                <br/>
+                <br />
             </p>
             <p class="font small">
-                Antrian Tersisa : 
+                Antrian Tersisa :
                 <?php
                     echo $antrian2
                 ?> Antrian
@@ -101,10 +101,10 @@
                         echo "<a class='link' href='../homepage/homepage.php?pesan=called'>Refresh Page</a><br/>";
                     }
                 ?>
-                <br/>
+                <br />
             </p>
             <p class="font small">
-                Antrian Tersisa : 
+                Antrian Tersisa :
                 <?php
                     echo $antrian3
                 ?> Antrian
