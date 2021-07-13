@@ -1,0 +1,266 @@
+-- MariaDB dump 10.18  Distrib 10.4.17-MariaDB, for Win64 (AMD64)
+--
+-- Host: localhost    Database: antrians
+-- ------------------------------------------------------
+-- Server version	10.4.17-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `log_loket1`
+--
+
+DROP TABLE IF EXISTS `log_loket1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `log_loket1` (
+  `id_log` int(11) NOT NULL AUTO_INCREMENT,
+  `id_antrian` int(5) DEFAULT NULL,
+  `nomor_antrian` varchar(30) DEFAULT NULL,
+  `waktu_pengambilan` datetime DEFAULT NULL,
+  `waktu_selesai` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_log`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `log_loket1`
+--
+
+LOCK TABLES `log_loket1` WRITE;
+/*!40000 ALTER TABLE `log_loket1` DISABLE KEYS */;
+INSERT INTO `log_loket1` VALUES (1,9,'ANTRIAN-009-LOKET1','2021-07-13 20:49:16','2021-07-13 21:07:40'),(2,10,'ANTRIAN-010-LOKET1','2021-07-13 20:52:01','2021-07-13 21:15:23'),(3,11,'ANTRIAN-011-LOKET1','2021-07-13 21:01:21','2021-07-13 21:15:23'),(4,12,'ANTRIAN-012-LOKET1','2021-07-13 21:04:20','2021-07-13 21:15:23'),(5,13,'ANTRIAN-013-LOKET1','2021-07-13 21:14:21','2021-07-13 21:15:23'),(6,14,'ANTRIAN-014-LOKET1','2021-07-13 21:14:49','2021-07-13 21:15:23'),(7,1,'ANTRIAN-001-LOKET1','2021-07-13 21:15:39','2021-07-13 21:16:31');
+/*!40000 ALTER TABLE `log_loket1` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `log_loket2`
+--
+
+DROP TABLE IF EXISTS `log_loket2`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `log_loket2` (
+  `id_log` int(11) NOT NULL AUTO_INCREMENT,
+  `id_antrian` int(5) DEFAULT NULL,
+  `nomor_antrian` varchar(30) DEFAULT NULL,
+  `waktu_pengambilan` datetime DEFAULT NULL,
+  `waktu_selesai` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_log`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `log_loket2`
+--
+
+LOCK TABLES `log_loket2` WRITE;
+/*!40000 ALTER TABLE `log_loket2` DISABLE KEYS */;
+/*!40000 ALTER TABLE `log_loket2` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `log_loket3`
+--
+
+DROP TABLE IF EXISTS `log_loket3`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `log_loket3` (
+  `id_log` int(5) NOT NULL AUTO_INCREMENT,
+  `id_antrian` int(5) DEFAULT NULL,
+  `nomor_antrian` varchar(30) DEFAULT NULL,
+  `waktu_diambil` datetime DEFAULT NULL,
+  `waktu_selesai` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_log`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `log_loket3`
+--
+
+LOCK TABLES `log_loket3` WRITE;
+/*!40000 ALTER TABLE `log_loket3` DISABLE KEYS */;
+INSERT INTO `log_loket3` VALUES (1,2,'ANTRIAN-002-LOKET3','2021-07-03 21:36:42','2021-07-03 22:36:12'),(2,3,'ANTRIAN-003-LOKET3','2021-07-03 21:36:45','2021-07-03 22:37:03');
+/*!40000 ALTER TABLE `log_loket3` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `loket1`
+--
+
+DROP TABLE IF EXISTS `loket1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `loket1` (
+  `id_antrian` int(11) NOT NULL AUTO_INCREMENT,
+  `nomor_antrian` varchar(30) DEFAULT NULL,
+  `waktu` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_antrian`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `loket1`
+--
+
+LOCK TABLES `loket1` WRITE;
+/*!40000 ALTER TABLE `loket1` DISABLE KEYS */;
+INSERT INTO `loket1` VALUES (2,'ANTRIAN-002-LOKET1','2021-07-13 21:15:43'),(3,'ANTRIAN-003-LOKET1','2021-07-13 21:32:37'),(4,'ANTRIAN-004-LOKET1','2021-07-13 21:33:14');
+/*!40000 ALTER TABLE `loket1` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = cp850 */ ;
+/*!50003 SET character_set_results = cp850 */ ;
+/*!50003 SET collation_connection  = cp850_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER log_loket1 AFTER DELETE ON loket1 FOR EACH ROW
+INSERT INTO log_loket1 SET
+id_antrian = old.id_antrian,
+nomor_antrian = old.nomor_antrian,
+waktu_pengambilan = old.waktu,
+waktu_selesai = NOW() */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `loket2`
+--
+
+DROP TABLE IF EXISTS `loket2`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `loket2` (
+  `id_antrian` int(11) NOT NULL AUTO_INCREMENT,
+  `nomor_antrian` varchar(30) DEFAULT NULL,
+  `waktu` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_antrian`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `loket2`
+--
+
+LOCK TABLES `loket2` WRITE;
+/*!40000 ALTER TABLE `loket2` DISABLE KEYS */;
+INSERT INTO `loket2` VALUES (2,'ANTRIAN-002-LOKET2','2021-07-13 21:14:39');
+/*!40000 ALTER TABLE `loket2` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = cp850 */ ;
+/*!50003 SET character_set_results = cp850 */ ;
+/*!50003 SET collation_connection  = cp850_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER log_loket2 AFTER DELETE ON loket2 FOR EACH ROW
+INSERT INTO log_loket2 SET
+id_antrian = old.id_antrian,
+nomor_antrian = old.nomor_antrian,
+waktu_pengambilan = old.waktu,
+waktu_selesai = NOW() */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `loket3`
+--
+
+DROP TABLE IF EXISTS `loket3`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `loket3` (
+  `id_antrian` int(11) NOT NULL AUTO_INCREMENT,
+  `nomor_antrian` varchar(30) DEFAULT NULL,
+  `waktu` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_antrian`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `loket3`
+--
+
+LOCK TABLES `loket3` WRITE;
+/*!40000 ALTER TABLE `loket3` DISABLE KEYS */;
+INSERT INTO `loket3` VALUES (4,'ANTRIAN-004-LOKET3','2021-07-03 21:36:52'),(5,'ANTRIAN-005-LOKET3','2021-07-03 22:47:57'),(6,'ANTRIAN-006-LOKET3','2021-07-03 22:48:11'),(7,'ANTRIAN-007-LOKET3','2021-07-13 21:04:42');
+/*!40000 ALTER TABLE `loket3` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_unicode_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `log_loket3` AFTER DELETE ON `loket3` FOR EACH ROW INSERT INTO log_loket3 SET
+id_antrian = old.id_antrian,
+nomor_antrian = old.nomor_antrian,
+waktu_diambil = old.waktu,
+waktu_selesai = NOW() */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `user_admin`
+--
+
+DROP TABLE IF EXISTS `user_admin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_admin` (
+  `id_user` int(5) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_admin`
+--
+
+LOCK TABLES `user_admin` WRITE;
+/*!40000 ALTER TABLE `user_admin` DISABLE KEYS */;
+INSERT INTO `user_admin` VALUES (1,'shadow','e0a67c8c63f8f7362917abef6ca24c6b'),(2,'shadow1','f04af61b3f332afa0ceec786a42cd365'),(3,'hero','f04af61b3f332afa0ceec786a42cd365'),(5,'heroadmin','e75ddb9f487cd7ea2bc842bc7171fa36'),(6,'adminhero','f04af61b3f332afa0ceec786a42cd365');
+/*!40000 ALTER TABLE `user_admin` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-07-13 22:15:59
