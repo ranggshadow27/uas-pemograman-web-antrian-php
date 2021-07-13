@@ -12,4 +12,4 @@ UNIVERSITAS PELITA BANGSA
 
         PDF : https://bit.ly/pdf-sistemantrian-rangga
         
-        nama database : antrians | Download file untuk cek sistem antrian saya
+        Untuk demo/pengecekan langsung download .zip sistem antrian saya pak | nama database : antrians 
