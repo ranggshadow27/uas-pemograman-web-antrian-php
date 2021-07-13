@@ -7,3 +7,7 @@ UAS - PEMOGRAMAN WEB - SISTEM ANTRIAN
 <br />
 <br />
 UNIVERSITAS PELITA BANGSA
+
+        Demo (Youtube) : https://bit.ly/github-sistemantrian-rangga
+
+        PDF : https://bit.ly/pdf-sistemantrian-rangga
